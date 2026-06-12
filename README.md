@@ -13,8 +13,7 @@ The skill is designed for Nature-family manuscript review and revision, includin
 .
 ├── claude/
 │   └── skills/
-│       ├── nature-peer-review/
-│       └── peer-review/
+│       └── nature-peer-review/
 ├── codex/
 │   └── skills/
 │       └── nature-peer-review/
@@ -37,10 +36,9 @@ Claude-compatible files are in:
 
 ```text
 claude/skills/nature-peer-review/
-claude/skills/peer-review/
 ```
 
-The Claude `nature-peer-review` skill is designed as an overlay that extends the generic `peer-review` skill. The parent `peer-review` skill is included so the Nature skill remains usable after cloning this repository.
+The Claude `nature-peer-review` skill is designed as an overlay that extends a generic `peer-review` skill. This repository now ships only the Nature overlay. If your Claude setup does not already include `peer-review`, install that parent skill separately or adapt the Nature overlay as a standalone workflow.
 
 Typical invocation:
 

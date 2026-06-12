@@ -35,12 +35,12 @@ For generic journal review (clinical trials, mid-tier specialty journals, method
 This skill **extends** `peer-review`. It does not replace it. Specifically:
 
 - The 7-stage workflow (Initial assessment → Section review → Methodological rigor → Reproducibility → Figures → Ethics → Writing) is inherited as-is.
-- The reporting-standards reference (`../peer-review/references/reporting_standards.md`) is reused.
-- The common-issues catalogue (`../peer-review/references/common_issues.md`) is reused.
+- The generic reporting-standards reference from the installed parent `peer-review` skill should be reused when available.
+- The common-issues catalogue from the installed parent `peer-review` skill should be reused when available.
 - This skill **adds** four Nature-specific overlays: Advance Bar, Audience Breadth, Reporting Summary, and Nature Tone.
 - This skill **drops** the presentation/slide-deck workflow (Stage 7 sub-section in the parent), since Nature submissions are manuscripts not slide decks.
 
-Read the parent skill at `f:\wu_sm2\dissertation\.claude\skills\peer-review\SKILL.md` if reviewing a discipline where the inherited stages need fuller detail than reproduced here.
+This repository ships only the Nature overlay. If your Claude environment does not already include `peer-review`, install that parent skill separately or adapt this overlay as a standalone workflow.
 
 ---
 
@@ -58,7 +58,7 @@ Run all seven stages from the parent skill, but with the Nature overlays describ
 | 6. Ethics | IRB / consent | UK Biobank / consortium ethics statements; competing interests; AI/LLM disclosure |
 | 7. Writing quality | Clarity | **No jargon without definition**; **Title ≤ 15 words**; **Abstract ≤ 200 words (Nature) or ≤ 250 (Nat Med / Nat Comm)**; **First sentence accessible to a non-specialist** |
 
-Detailed stage-by-stage criteria for the inherited workflow are in `f:\wu_sm2\dissertation\.claude\skills\peer-review\SKILL.md`. Do not duplicate that detail when running this skill — load both files into context.
+Detailed stage-by-stage criteria live in the installed parent `peer-review` skill. Do not duplicate that detail when running this skill; load the parent skill and this Nature overlay together when the parent is available.
 
 ---
 
@@ -321,10 +321,10 @@ Differences between Nature, Nature Medicine, Nature Communications, Nature Metho
 Filled-out template with placeholders matching the Report Format section above.
 
 ### Reuse from parent `peer-review` skill
-- `../peer-review/references/reporting_standards.md` — CONSORT, STROBE, PRISMA, ARRIVE, MIAME, MINSEQE etc.
-- `../peer-review/references/common_issues.md` — 22-category catalogue of common methodological/statistical problems.
+- Parent reporting standards reference — CONSORT, STROBE, PRISMA, ARRIVE, MIAME, MINSEQE etc.
+- Parent common-issues catalogue — methodological and statistical problems.
 
-Always load both reused references when running this skill against a substantive manuscript — they are the inherited reference material.
+When the parent `peer-review` skill is installed, load both reused references when running this skill against a substantive manuscript; they are the inherited reference material.
 
 ---
 
